@@ -16,13 +16,17 @@
             }
 
             h1 {
-                color: red;
+                color: #0e5ec7;
+            }
+
+            tbody tr td{
+                background: #ff9123;
             }
         </style>
     </head>
 
     <body>
-        <img src="assets/logo.png" alt="" width="50px" height="50px">
+        <img src="assets/contacto.png" alt="" width="50px">
         <h1 class="text-center">CONTACTOS</h1><br>
         <table class="table" style="text-align: center; font-size: 20px">
             <thead class="cabecera">

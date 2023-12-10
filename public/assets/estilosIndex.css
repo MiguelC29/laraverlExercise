@@ -1,0 +1,30 @@
+body {
+    background: #f0f0f0;
+}
+
+.titulo {
+    text-shadow: 3px 3px 5px #0e5ec7;
+}
+
+.btn_nuevo, .btn_pdf {
+    color: #ffffff;
+    background-color: #222222;
+}
+
+.btn_nuevo {
+    box-shadow: -3px 4px 10px #0e5ec7;
+}
+
+.btn_pdf {
+    box-shadow: 3px 4px 10px #0e5ec7;
+}
+
+.btn_nuevo:hover, .btn_pdf:hover {
+    color: #ffffff;
+    background-color: #363636;
+}
+
+.table-light tr td{
+    background: #b1d1fa;
+    /* background: #fa952f; */
+}
