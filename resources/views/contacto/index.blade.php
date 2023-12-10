@@ -8,9 +8,11 @@
         <br><br>
         <h1>LISTA DE CONTACTOS</h1><br>
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create">
-            Nuevo
-        </button>
+        <div class="container mb-3">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create">
+                <i class="fa-solid fa-plus"></i> Nuevo</button>
+            <a href="{{ route('contactos.pdf') }}" class="btn btn-secondary" target="_blank">PDF</a>
+        </div>
         <div class="table-responsive">
             <table class="table table-primary">
                 <thead>
@@ -31,10 +33,10 @@
                         <td>{{ $contacto->direccion }}</td>
                         <td>
                         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#edit{{ $contacto->id }}">
-                            Editar
+                            <i class="fa-solid fa-pen-to-square"></i>
                         </button>
                         <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete{{ $contacto->id }}">
-                            Eliminar
+                            <i class="fa-solid fa-trash"></i>
                         </button>
                         </td>
                     </tr>

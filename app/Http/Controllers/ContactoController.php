@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Contacto;
 use Illuminate\Http\Request;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class ContactoController extends Controller
 {
@@ -15,6 +16,14 @@ class ContactoController extends Controller
         //
         $contactos=Contacto::all();
         return view('contacto.index', compact('contactos'));
+    }
+
+    public function pdf()
+    {
+        $contactos=Contacto::all();
+        $pdf = Pdf::loadView('contacto.pdf', compact('contactos'));
+        // return $pdf->download('ReporteContactos.pdf');
+        return $pdf->stream();
     }
 
     /**
